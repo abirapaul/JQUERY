@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<style type="text/css">
+#dv1{
+	width:150px;
+	height:200px;
+	border:1px solid #000;
+	background:#609;
+	display:block;
+}
+#dv2{
+	width:250px;
+	height:450px;
+	background:#0C9;
+	display:none;
+}
+#para{
+	position:absolute;
+}
+</style>
+</head>
+
+<body>
+<div id="dv1">
+<p id="para">Click</p>
+</div>
+<div id="dv2">
+</div>
+<script>
+	$(document).ready(function() {
+        $("#dv1").click(function() {
+            $("#dv2").show(700)
+        });
+    });
+</script>
+</body>
+</html>

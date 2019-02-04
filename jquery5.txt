@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<style type="text/css">
+#dv1{
+	width: 250px;
+	height:40px;
+	background:#F00;
+	color:#FFF;
+}
+#dv1 p{
+	text-align:center;
+	padding-top:10px;
+}
+#dv2{
+	width: 250px;
+	height:400px;
+	background:#F00;
+	color:#FFF;
+	display:none;
+}
+</style>
+</head>
+
+<body>
+<div id="dv1">
+	<p>Click Me</p>
+</div>
+<div id="dv2"></div>
+<script>
+$(document).ready(function() {
+    $("#dv1").click(function() {
+		$("#dv2").slideToggle(400)
+    });
+});
+</script>
+</body>
+</html>
